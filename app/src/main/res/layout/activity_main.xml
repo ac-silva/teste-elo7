@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FAFAFA"
+    android:rowCount="3"
+    android:columnCount="1"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        >
+
+        <br.com.elo7.jobs.view.Logo
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:id="@+id/logo">
+        </br.com.elo7.jobs.view.Logo>
+
+        <br.com.elo7.jobs.view.Menu
+            android:id="@+id/menu"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            ></br.com.elo7.jobs.view.Menu>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/body"
+        android:orientation="vertical">
+
+        <br.com.elo7.jobs.view.DepartamentBlock
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></br.com.elo7.jobs.view.DepartamentBlock>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/footer"
+        android:orientation="vertical"></LinearLayout>
+
+</GridLayout>
